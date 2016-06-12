@@ -1,5 +1,10 @@
 # ThreadDemo
 
+搬运自：<https://www.raywenderlich.com/60749/grand-central-dispatch-in-depth-part-1>
+
+<http://www.raywenderlich.com/63338/grand-central-dispatch-in-depth-part-2>
+
+
 ##多线程术语
 ###Serial（串行）、Concurrent（并发）
 任务串行执行就是每次只有一个任务被执行，任务并发执行就是在同一时间可以有多个任务被执行
