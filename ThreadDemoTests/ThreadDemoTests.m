@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "User.h"
 
 @interface ThreadDemoTests : XCTestCase
 
@@ -27,6 +28,36 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+}
+
+- (void)testUser {
+    dispatch_queue_t queue = dispatch_queue_create("text.user.queue", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_async(queue, ^{
+        User *user = [User sharedUser];
+        [user addObject:[NSNumber numberWithInt:0]];
+        NSLog(@"test1 %lu",(unsigned long)user.array.count);
+    });
+    
+    dispatch_async(queue, ^{
+        User *user = [User sharedUser];
+        for (int i = 5; i < 10; i ++) {
+            [user addObject:[NSNumber numberWithInt:i]];
+            NSLog(@"%d",i);
+        }
+        NSLog(@"test2 %lu",(unsigned long)user.array.count);
+    });
+    
+    dispatch_async(queue, ^{
+        User *user = [User sharedUser];
+        for (int i = 10; i < 15; i ++) {
+            [user addObject:[NSNumber numberWithInt:i]];
+            NSLog(@"%d",i);
+        }
+        NSLog(@"test3 %lu",(unsigned long)user.array.count);
+    });
+    
+    
 }
 
 - (void)testPerformanceExample {

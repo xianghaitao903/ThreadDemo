@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		950552CF1CB6A8D60004D82F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 950552CE1CB6A8D60004D82F /* User.m */; };
 		950F19451CAA197F00F09DD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 950F19441CAA197F00F09DD3 /* main.m */; };
 		950F19481CAA197F00F09DD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 950F19471CAA197F00F09DD3 /* AppDelegate.m */; };
 		950F194B1CAA197F00F09DD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 950F194A1CAA197F00F09DD3 /* ViewController.m */; };
 		950F194E1CAA197F00F09DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 950F194C1CAA197F00F09DD3 /* Main.storyboard */; };
 		950F19501CAA197F00F09DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950F194F1CAA197F00F09DD3 /* Assets.xcassets */; };
 		950F195E1CAA197F00F09DD3 /* ThreadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 950F195D1CAA197F00F09DD3 /* ThreadDemoTests.m */; };
+		95422C511CAD5B9000EDF6BB /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95422C501CAD5B9000EDF6BB /* MyOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		950552CD1CB6A8D60004D82F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		950552CE1CB6A8D60004D82F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		950F19401CAA197F00F09DD3 /* ThreadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		950F19441CAA197F00F09DD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		950F19461CAA197F00F09DD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		950F19591CAA197F00F09DD3 /* ThreadDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreadDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		950F195D1CAA197F00F09DD3 /* ThreadDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadDemoTests.m; sourceTree = "<group>"; };
 		950F195F1CAA197F00F09DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95422C4F1CAD5B9000EDF6BB /* MyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOperation.h; sourceTree = "<group>"; };
+		95422C501CAD5B9000EDF6BB /* MyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,10 @@
 				950F194F1CAA197F00F09DD3 /* Assets.xcassets */,
 				950F19541CAA197F00F09DD3 /* Info.plist */,
 				950F19431CAA197F00F09DD3 /* Supporting Files */,
+				95422C4F1CAD5B9000EDF6BB /* MyOperation.h */,
+				95422C501CAD5B9000EDF6BB /* MyOperation.m */,
+				950552CD1CB6A8D60004D82F /* User.h */,
+				950552CE1CB6A8D60004D82F /* User.m */,
 			);
 			path = ThreadDemo;
 			sourceTree = "<group>";
@@ -207,9 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950552CF1CB6A8D60004D82F /* User.m in Sources */,
 				950F194B1CAA197F00F09DD3 /* ViewController.m in Sources */,
 				950F19481CAA197F00F09DD3 /* AppDelegate.m in Sources */,
 				950F19451CAA197F00F09DD3 /* main.m in Sources */,
+				95422C511CAD5B9000EDF6BB /* MyOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
